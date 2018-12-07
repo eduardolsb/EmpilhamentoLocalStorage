@@ -9,7 +9,7 @@ GARRA: {
                 } else {
                     var calc = (objString.length / GARRA.Methods.localStorage.limitcharacter), i = 0, start = 0;
                     while (i <= calc) {
-                        localStorage.setItem((i === 0) ? nome : nome + i.toString(), objString.substr(start, (GARRA.Methods.localStorage.limitcharacter * (i + 1))));
+                        localStorage.setItem((i === 0) ? nome : nome + i.toString(), objString.substr(start, GARRA.Methods.localStorage.limitcharacter));
                         start = (start + GARRA.Methods.localStorage.limitcharacter);
                         i++;
                     }
